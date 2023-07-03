@@ -9,14 +9,14 @@
 
         private static void RunApp()
         {
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            Console.WriteLine("-".PadLeft(92,'-').PadRight(92,'-'));
             Console.WriteLine("|                                   IP Calculator V1                                       |");
             Console.WriteLine("|                                       (C) 2023                                           |");
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            Console.WriteLine("-".PadLeft(92, '-').PadRight(92, '-'));
             Console.WriteLine("|            Πληκτρολογέις στην εφαρμογή την διεύθηνση IP που σεν ενδιαφέρει               |");
             Console.WriteLine("|        για να υπολογίσεις την subnet mask και δινεις τον αριθμό των υποδικτύων           |");
             Console.WriteLine("|                          ή των host που θες να σπάσει το δίκτυο                          |");
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            Console.WriteLine("-".PadLeft(92, '-').PadRight(92, '-'));
             int[] IPint = checkIP();
             string SubnetMask = CalculateSubnetMask(IPint[0]);
             Console.WriteLine("Η διευθηνση IP {0} έχει subnet mask {1}", IPint[0] + "." + IPint[1] + "." + IPint[2] + "." + IPint[3], SubnetMask);
